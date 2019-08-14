@@ -1,0 +1,20 @@
+.resume-container {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+.resume-title {
+	margin: 1em 0;
+}
+
+.resume {
+	display: inline-block;
+	width: 75%;
+	border: solid 1px #000;
+	box-shadow: 0 0 -2px 1px;
+	margin-bottom: 2em;
+}

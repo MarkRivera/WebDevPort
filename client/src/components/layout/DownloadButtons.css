@@ -1,0 +1,36 @@
+.downloads {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.download-title {
+	font-size: 1.5em;
+	margin: 1em 0;
+	font-weight: 800;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 1em 0;
+	width: 75%;
+}
+
+.resume-btn {
+	background-color: #ed4933;
+	border: none;
+	width: 8em;
+	height: 44px;
+	color: #fff;
+	font-weight: 800;
+}
+
+hr {
+	width: 75%;
+	border-color: #dfdfdf;
+	border: 0;
+	border-bottom: solid 2px #dfdfdf;
+	margin: 2em 0 0;
+}

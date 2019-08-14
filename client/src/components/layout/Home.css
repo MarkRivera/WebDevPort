@@ -1,0 +1,56 @@
+.banner {
+	height: 100vh;
+	background-image: -webkit-linear-gradient(
+			top,
+			rgba(0, 0, 0, 0.8),
+			rgba(0, 0, 0, 0.8)
+		),
+		url(../../images/nyc-dark.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.header-card {
+	color: rgba(255, 255, 255, 1);
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-title {
+	font-size: 1.75em;
+	font-weight: 800;
+	letter-spacing: 0.25em;
+	line-height: 1.75em;
+	margin-bottom: 0.75em;
+}
+
+.header-position {
+	font-weight: 800;
+	letter-spacing: 0.225em;
+	line-height: 1em;
+	margin: 0 0 1em 0;
+	text-transform: uppercase;
+}
+
+.btn {
+	width: 10em;
+	height: 4em;
+	border: solid 2px rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+}
+
+.header-btn {
+	margin: 1em 0 2em;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgba(255, 255, 255, 1);
+}

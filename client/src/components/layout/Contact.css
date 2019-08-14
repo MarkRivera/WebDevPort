@@ -1,0 +1,115 @@
+.contact-image-wrapper {
+	background-image: url("../../images/nyc-day.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.contact-form {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	margin: 2em auto 0;
+	max-width: 768px;
+}
+
+.form-group {
+	display: flex;
+	flex-flow: column;
+	margin: 0 1em 1em;
+	justify-content: center;
+	position: relative;
+}
+
+.form-title {
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+.form-control {
+	border-radius: 5px;
+	font-size: 1em;
+	height: 40px;
+	padding: 16px 20px 0;
+	border: solid 2px #1d242a;
+	outline: none;
+}
+
+.input-label {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #8c8c8c;
+	left: 20px;
+	font-size: 14px;
+	transition: all 0.2s ease;
+	pointer-events: none;
+}
+
+.auth-form {
+	width: 100%;
+	text-align: center;
+	margin: 2em 0;
+}
+
+.text-area {
+	border-radius: 5px;
+	font-size: 1em;
+	padding: 16px 20px 0;
+	border: solid 2px #1d242a;
+	outline: none;
+}
+
+.form-btn {
+	background-color: #1d242a;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.lds-ring {
+	display: inline-block;
+	position: relative;
+	width: 44px;
+	height: 44px;
+}
+
+.lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	margin: 6px auto;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.danger {
+	background-color: rgba(255, 0, 0, 0.5);
+	border-color: rgba(255, 0, 0, 0.6);
+}
+
+.danger-label {
+	color: red;
+}
