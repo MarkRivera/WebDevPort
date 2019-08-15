@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.06204670.chunk.css",
+    "main.js": "/static/js/main.54ceccd2.chunk.js",
+    "main.js.map": "/static/js/main.54ceccd2.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.bdc68d36.js",
+    "runtime~main.js.map": "/static/js/runtime~main.bdc68d36.js.map",
+    "static/css/2.e6ae24df.chunk.css": "/static/css/2.e6ae24df.chunk.css",
+    "static/js/2.cc64e26f.chunk.js": "/static/js/2.cc64e26f.chunk.js",
+    "static/js/2.cc64e26f.chunk.js.map": "/static/js/2.cc64e26f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.82231d7bd7edba170d7a8472bf8c5e7c.js": "/precache-manifest.82231d7bd7edba170d7a8472bf8c5e7c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.e6ae24df.chunk.css.map": "/static/css/2.e6ae24df.chunk.css.map",
+    "static/css/main.06204670.chunk.css.map": "/static/css/main.06204670.chunk.css.map",
+    "static/media/MR.png": "/static/media/MR.6588dcce.png",
+    "static/media/MessageMe.png": "/static/media/MessageMe.72b7f82d.png",
+    "static/media/Netbuilders.png": "/static/media/Netbuilders.697224d1.png",
+    "static/media/Ravenous.png": "/static/media/Ravenous.4d9eda9f.png",
+    "static/media/Watchthis.png": "/static/media/Watchthis.baf87661.png",
+    "static/media/code.jpg": "/static/media/code.8c181c2b.jpg",
+    "static/media/all.css": "/static/media/fa-solid-900.fdc155d5.svg",
+    "static/media/Home.css": "/static/media/nyc-dark.c8979b76.jpg",
+    "static/media/Contact.css": "/static/media/nyc-day.ff8100dd.jpg"
+  }
+}
