@@ -2,4 +2,7 @@
 /node_modules
 
 #config
-/client/config/config.js
+/config
+
+#env
+.env

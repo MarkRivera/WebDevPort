@@ -7,8 +7,8 @@ const { check, validationResult } = require("express-validator");
 const transport = {
 	host: "smtp.gmail.com",
 	auth: {
-		user: creds.USER,
-		pass: creds.PASS
+		user: process.env.EUSER,
+		pass: process.env.EPW
 	}
 };
 
