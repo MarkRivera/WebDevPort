@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from "react";
-import PropTypes from "prop-types";
 import "./Contact.css";
 import Header from "./Header";
 
@@ -17,12 +16,14 @@ const Spinner = props => {
 const Contact = props => {
 	const [formData, setFormData] = useState({
 		email: "",
-		message: ""
+		message: "",
+		honeyName: "",
+		honeyEmail: ""
 	});
 
 	const [awaitingResponse, setResponse] = useState(false);
 
-	const { email, message } = formData;
+	const { email, message, honeyEmail, honeyName } = formData;
 
 	const onChange = e => {
 		setFormData({
@@ -52,13 +53,16 @@ const Contact = props => {
 		e.preventDefault();
 		const data = formData;
 
-		fetch("/api/contact/email", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json"
-			},
-			body: JSON.stringify(data)
-		})
+		if( data.honeyName.length > 0 || data.honeyEmail.length > 0) {
+			return
+		} else {
+			fetch("/api/contact/email", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify(data)
+			})
 			.then(res => res.json())
 			.then(res => {
 				if (res.errors) {
@@ -73,6 +77,7 @@ const Contact = props => {
 					});
 				}
 			});
+		}
 	};
 
 	const errorHandler = (error, property) => {
@@ -110,7 +115,7 @@ const Contact = props => {
 							onFocus={e => onFocus(e)}
 							onBlur={e => onBlur(e)}
 						/>
-						<label for="email" className="input-label">
+						<label htmlFor="email" className="input-label">
 							Email
 						</label>
 					</div>
@@ -129,6 +134,31 @@ const Contact = props => {
 						></textarea>
 					</div>
 
+					{/* Honey Pot Forms */}
+
+					<label className="ohnohoney" htmlFor="name"></label>
+					<input
+						className="ohnohoney"
+						autoComplete="off"
+						type="text" id="name"
+						name="name"
+						placeholder="Your name here"
+						onChange={e => onChange(e)}
+						value={honeyName}
+					/>
+
+					<label className="ohnohoney" htmlFor="email"></label>
+					<input
+						className="ohnohoney"
+						autoComplete="off"
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Your e-mail here"
+						onChange={e => onChange(e)}
+						value={honeyEmail}
+					/>
+
 					<button type="submit" className="btn form-btn">
 						{awaitingResponse ? <Spinner /> : "Submit"}
 					</button>
@@ -137,7 +167,5 @@ const Contact = props => {
 		</Fragment>
 	);
 };
-
-Contact.propTypes = {};
 
 export default Contact;
